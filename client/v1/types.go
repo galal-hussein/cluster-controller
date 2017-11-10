@@ -208,6 +208,8 @@ type SchedulerService struct {
 type baseService struct {
 	// Docker image of the service
 	Image string `yaml:"image"`
+	// Extra arguments passed to the service on start
+	ExtraArgs []string `yaml:"extra_args"`
 }
 
 type ClusterNode struct {
